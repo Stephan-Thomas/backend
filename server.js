@@ -75,7 +75,7 @@ app.post("/login", async (req, res) => {
   }
 });
 
-// PROTECTED route
+// PROTECTED routezzzzz
 app.get("/overview", authenticate, (req, res) => {
   res.send("You are viewing a protected dashboard 🛡️");
 });
@@ -92,7 +92,7 @@ app.get("/calender", authenticate, (req, res) => {
   res.send("You are viewing a protected dashboard 🛡️");
 });
 
-app.get("/addNew", authenticate, (req, res) => {
+app.post("/addNew", authenticate, (req, res) => {
   res.send("You are viewing a protected dashboard 🛡️");
 });
 
